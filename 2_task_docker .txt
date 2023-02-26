@@ -1,0 +1,43 @@
+C:\Users\User\Desktop\web\backEnd\test>docker pull node:15.14
+15.14: Pulling from library/node
+bfde2ec33fbc: Pull complete
+787f5e2f1047: Pull complete
+7b6173a10eb8: Pull complete
+dc05be471d51: Pull complete
+55fab5cadd3c: Pull complete
+bd821d20ef8c: Pull complete
+6041b69671c6: Pull complete
+989c5d2d2313: Pull complete
+4b57d41e8391: Pull complete
+Digest: sha256:608bba799613b1ebf754034ae008849ba51e88b23271412427b76d60ae0d0627
+Status: Downloaded newer image for node:15.14
+docker.io/library/node:15.14
+
+
+C:\Users\User\Desktop\web\backEnd\test>docker run -it --name mynode -e NAME=Yuriy -e SURNAME=Mayorov node
+Welcome to Node.js v19.7.0.
+Type ".help" for more information.
+> `Привет, ${process.env.NAME} ${process.env.SURNAME}!`
+'Привет, Yuriy Mayorov!'
+>
+
+C:\Users\User\Desktop\web\backEnd\test>docker stop mynode
+mynode
+
+C:\Users\User\Desktop\web\backEnd\test>docker rm mynode
+mynode
+
+C:\Users\User\Desktop\web\backEnd\test>docker rmi node
+Untagged: node:latest
+Untagged: node@sha256:d903b23148dccca63152cb2bdf6fdfa062842dcce49f0d45558ca06a8ab14598
+Deleted: sha256:2201f1d2b46f1db5b1b58c8699709564a2e5e1196d4b511f807dbf49b33e9ed1
+Deleted: sha256:88eb3c5434acc99fcb2dcde6d81b68c59f9d3b70d3f3112a6c61b2c9da40e23b
+Deleted: sha256:b3d6d7f8e7fe929d34cba54661d71b1a217741dbe31ec5e52c05d714cf670a70
+Deleted: sha256:e5290d35b701d1fc274f7c2b277ab3cda13f8dda573a6bdf38a49a599ae7e6bd
+Deleted: sha256:36ca113a7d30c59abf0870dcf652c59bc76cb627877d3e851619f65383a66b0f
+Deleted: sha256:feef80ae1b9a4a49dfa5e41181caf683ab3dae44dc8b5c2fdafc4a4fb364d242
+Deleted: sha256:35a162afcf7f923ad76bbcc532ebc3500d4c2fe2c045c2fc88e741a58197bf09
+Deleted: sha256:9259e53dcd6f94d6d38111d2385de52014e38e4bfce49f5639fb3d6f9a58b430
+Deleted: sha256:d78294ee5a46abcc2a8eb9bb1edb333604e57bd7cab95c8b9821038c6d506b1c
+Deleted: sha256:8e396a1aad506affc6fa1b7c7b8ee75b54b78019e0a945e6ac52e3dc407e0766
+
